@@ -44,7 +44,7 @@ export default function Register() {
             <div className="form-group">
               <button className="btn btn-brand-1 hover-up w-100" type="submit" name="login">Submit &amp; Register</button>
             </div>
-            <div className="text-muted text-center">Already have an account? <Link to="signin">Sign in</Link></div>
+            <div className="text-muted text-center">Already have an account? <Link to="/signin">Sign in</Link></div>
           </form>
         </div>
         <div className="img-1 d-none d-lg-block"><img className="shape-1" src="assets/imgs/page/login-register/img-1.svg" alt="JobBox" /></div>

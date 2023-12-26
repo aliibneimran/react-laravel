@@ -3243,7 +3243,9 @@ ul li:last-child .card-list-4 {
 .header.header-2 {
   background-color: #F8FAFF;
 }
-
+.sticky-top{
+  background-color: white;
+}
 .sticky-bar.stick {
   animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);

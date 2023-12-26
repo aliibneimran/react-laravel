@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 export default function Header() {
   return (
    <div>
-  <div id="preloader-active">
+  {/* <div id="preloader-active">
     <div className="preloader d-flex align-items-center justify-content-center">
       <div className="preloader-inner position-relative">
         <div className="text-center"><img src="assets/imgs/template/loading.gif" alt="jobBox" /></div>
       </div>
     </div>
-  </div>
+  </div> */}
   <div className="modal fade" id="ModalApplyJobForm" tabIndex={-1} aria-hidden="true">
     <div className="modal-dialog modal-lg">
       <div className="modal-content apply-job-form">
@@ -56,7 +56,7 @@ export default function Header() {
       </div>
     </div>
   </div>
-  <header className="header sticky-bar">
+  <header className="header sticky-top">
     <div className="container">
       <div className="main-header">
         <div className="header-left">
