@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/',[HomeController::class,'index']);
+Route::get('/',[HomeController::class,'contactlist']);
 Route::get('about',[HomeController::class,'about']);
 Route::get('contact',[HomeController::class,'contact']);
 Route::post('send',[HomeController::class,'store']);

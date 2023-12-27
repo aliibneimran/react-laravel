@@ -14,7 +14,22 @@
         a matter of hours to help you.</p>
 
     <div class="row">
-
+        <!-- Validation Errors -->
+        @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+        @endif
+        <!-- Success Message -->
+        @if (session('msg'))
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{ session('msg') }}
+        </div>
+        @endif
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
             <form id="contact-form" name="contact-form" action="send" method="POST">
@@ -22,30 +37,36 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                        <label for="name" class="">Your name</label>
-                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                            <input type="text" id="name" name="name" value="{{old('name')}}" class="form-control">
+                            @error('name')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                        <label for="email" class="">Your email</label>
-                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                            <input type="text" id="email" name="email" value="{{old('email')}}" class="form-control">
+                            @error('email')
+                            <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
-                        <label for="subject" class="">Subject</label>
-                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                            <input type="text" id="subject" name="subject" value="{{old('subject')}}" class="form-control">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="md-form">
-                        <label for="message">Your message</label>
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea">{{old('message')}}</textarea>
                         </div>
                     </div>
                 </div>
