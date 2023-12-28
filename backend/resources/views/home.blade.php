@@ -31,29 +31,7 @@
     </div>
     <div class="col-sm-8">
       <h2 class="text-center p-2">Message List</h2>
-      <table class="table table-striped table-dark">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Subject</th>
-            <th>Message</th>
-          </tr>
-        </thead>
-        <tbody>
-          @php $no = 1 @endphp
-          @foreach($message as $item)
-          <tr>
-            <th>{{$no++}}</th>
-            <td>{{$item->name}}</td>
-            <td>{{$item->email}}</td>
-            <td>{{$item->subject}}</td>
-            <td>{{$item->message}}</td>
-          </tr>  
-          @endforeach
-        </tbody>
-      </table>
+      
     </div>
   </div>
 </div>

@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    @include('layouts.hero')
     @include('layouts.header')
     @yield('content')
     @include('layouts.footer')
