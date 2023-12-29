@@ -54,16 +54,17 @@
                             </div>
                         </div>
                         <div class="row">
+                        @foreach($jobs as $item)
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
                                 <div class="card-grid-2 hover-up">
                                     <div class="card-grid-2-image-left"><span class="flash"></span>
                                         <div class="image-box"><img src="assets/imgs/brands/brand-1.png" alt="jobBox"></div>
-                                        <div class="right-info"><a class="name-job" href="company-details.html">LinkedIn</a><span class="location-small">New York, US</span></div>
+                                        <div class="right-info"><a class="name-job" href="company-details.html">LinkedIn</a><span class="location-small">{{$item->location}}</span></div>
                                     </div>
                                     <div class="card-block-info">
-                                        <h6><a href="job-details.html">UI / UX Designer fulltime</a></h6>
+                                        <h6><a href="job-details.html">{{$item->title}}</a></h6>
                                         <div class="mt-5"><span class="card-briefcase">Fulltime</span><span class="card-time">4<span> minutes ago</span></span></div>
-                                        <p class="font-sm color-text-paragraph mt-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto eveniet, dolor quo repellendus pariatur</p>
+                                        <p class="font-sm color-text-paragraph mt-15">{{$item->description}}</p>
                                         <div class="mt-30"><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Adobe XD</a><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Figma</a><a class="btn btn-grey-small mr-5" href="jobs-grid.html">Photoshop</a>
                                         </div>
                                         <div class="card-2-bottom mt-30">
@@ -77,6 +78,7 @@
                                     </div>
                                 </div>
                             </div>
+                            @endforeach
                             <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12">
                                 <div class="card-grid-2 hover-up">
                                     <div class="card-grid-2-image-left"><span class="flash"></span>

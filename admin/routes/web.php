@@ -32,7 +32,8 @@ Route::get('candidates',[CandidateController::class,'index']);
 Route::get('companies',[CompanyController::class,'index']);
 
 Route::get('jobs',[JobController::class,'index']);
-Route::get('post-job',[JobController::class,'store']);
+Route::get('job-post',[JobController::class,'create']);
+Route::post('sent',[JobController::class,'store']);
 
 Route::get('tasks',[TaskController::class,'index']);
 Route::get('profile',[ProfileController::class,'index']);

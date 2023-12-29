@@ -7,20 +7,27 @@ use Illuminate\Http\Request;
 
 class JobController extends Controller
 {
-    public function index(){
-        return view('jobs');
+    public function index()
+    {
+        $data['jobs'] = Job::all();
+        return view('jobs/index', $data);
     }
-    public function store(Request $req){
+    public function create()
+    {
+        return view('jobs/create');
+    }
+    public function store(Request $req)
+    {
         $jobs = new Job();
         $data = [
             'title' => $req->title,
             'description' => $req->description,
             'location' => $req->location,
-            'type' => $req->type,
             'salary' => $req->salary,
             'tag' => $req->tag,
         ];
         $jobs->insert($data);
-        return redirect('post-job')->with('msg', 'Successfully Entry');   
+        return redirect('job-post')->with('msg', 'Successfully Entry');
+
     }
 }
