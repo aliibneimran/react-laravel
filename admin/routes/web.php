@@ -1,17 +1,12 @@
 <?php
 
+use App\Http\Controllers\frontend\HomeController as FrontendHomeController;
+use App\Http\Controllers\frontend\JobController as FrontendJobController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CandidateController;
 use App\Http\Controllers\CompanyController;
-use App\Http\Controllers\frontend\HomeController as FrontendHomeController;
-use App\Http\Controllers\frontend\JobController as FrontendJobController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\JobController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\ResumeController;
-use App\Http\Controllers\SettingController;
-use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,21 +20,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.home');     
-});
-
-Route::get('/admin', function () {
-    return view('backend.login');     
-});
+//Frontend
+Route::get('/',[FrontendHomeController::class,'index']);
+Route::get('jobs',[FrontendJobController::class,'index']);
 
 //For Login
 Route::get('/login',[LoginController::class,'authenticate']);
 Route::get('/dashboard',[HomeController::class,'index']);
 
 
-Route::get('/',[FrontendHomeController::class,'index']);
-Route::get('jobs',[FrontendJobController::class,'index']);
+
 
 
 
@@ -48,11 +38,3 @@ Route::get('authentication',[AuthController::class,'index']);
 Route::get('admin/candidates',[CandidateController::class,'index']);
 Route::get('companies',[CompanyController::class,'index']);
 
-Route::get('jobs',[JobController::class,'index']);
-Route::get('job-post',[JobController::class,'create']);
-Route::post('sent',[JobController::class,'store']);
-
-Route::get('tasks',[TaskController::class,'index']);
-Route::get('profile',[ProfileController::class,'index']);
-Route::get('resume',[ResumeController::class,'index']);
-Route::get('settings',[SettingController::class,'index']);
