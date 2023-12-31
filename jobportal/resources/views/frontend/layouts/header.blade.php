@@ -2,58 +2,46 @@
     <div class="container">
       <div class="main-header">
         <div class="header-left">
-          <div class="header-logo"><a class="d-flex" href="index.html"><img alt="jobBox" src="assets/imgs/template/jobhub-logo.svg"></a></div>
+          <div class="header-logo"><a class="d-flex" href="/"><img alt="jobBox" src="assets/imgs/template/jobhub-logo.svg"></a></div>
         </div>
         <div class="header-nav">
           <nav class="nav-main-menu">
             <ul class="main-menu">
-              <li class="has-children"><a class="active" href="index.html">Home</a>
+              <li><a class="active" href="/">Home</a></li>
+              <li class="has-children"><a href="jobs">Find a Job</a>
                 <ul class="sub-menu">
-                  <li><a href="index.html">Home 1</a></li>
-                  <li><a href="index-2.html">Home 2</a></li>
-                  <li><a href="index-3.html">Home 3</a></li>
-                  <li><a href="index-4.html">Home 4</a></li>
-                  <li><a href="index-5.html">Home 5</a></li>
-                  <li><a href="index-6.html">Home 6</a></li>
+                  <li><a href="jobs">Jobs</a></li>
+                  <li><a href="job-details">Jobs Details </a></li>
                 </ul>
               </li>
-              <li class="has-children"><a href="jobs-grid.html">Find a Job</a>
+              <li class="has-children"><a href="companies">Recruiters</a>
                 <ul class="sub-menu">
-                  <li><a href="jobs-grid.html">Jobs Grid</a></li>
-                  <li><a href="jobs-list.html">Jobs List</a></li>
-                  <li><a href="job-details.html">Jobs Details </a></li>
-                  <li><a href="job-details-2.html">Jobs Details 2 </a></li>
+                  <li><a href="companies">Recruiters</a></li>
+                  <li><a href="company-details">Company Details</a></li>
                 </ul>
               </li>
-              <li class="has-children"><a href="companies-grid.html">Recruiters</a>
+              <li class="has-children"><a href="candidates">Candidates</a>
                 <ul class="sub-menu">
-                  <li><a href="companies-grid.html">Recruiters</a></li>
-                  <li><a href="company-details.html">Company Details</a></li>
+                  <li><a href="candidates">Candidates Grid</a></li>
+                  <li><a href="candidate-details">Candidate Details</a></li>
+                  <li><a href="candidate-profile">Candidate Profile</a></li>
                 </ul>
               </li>
-              <li class="has-children"><a href="candidates-grid.html">Candidates</a>
+              <li class="has-children"><a href="about">Pages</a>
                 <ul class="sub-menu">
-                  <li><a href="candidates-grid.html">Candidates Grid</a></li>
-                  <li><a href="candidate-details.html">Candidate Details</a></li>
-                  <li><a href="candidate-profile.html">Candidate Profile</a></li>
+                  <li><a href="about">About Us</a></li>
+                  <li><a href="pricing">Pricing Plan</a></li>
+                  <li><a href="contact">Contact Us</a></li>
+                  <li><a href="register">Register</a></li>
+                  <li><a href="signin">Signin</a></li>
+                  <li><a href="reset-password">Reset Password</a></li>
+                  <li><a href="content-protected">Content Protected</a></li>
                 </ul>
               </li>
-              <li class="has-children"><a href="blog-grid.html">Pages</a>
+              <li class="has-children"><a href="blog">Blog</a>
                 <ul class="sub-menu">
-                  <li><a href="page-about.html">About Us</a></li>
-                  <li><a href="page-pricing.html">Pricing Plan</a></li>
-                  <li><a href="page-contact.html">Contact Us</a></li>
-                  <li><a href="page-register.html">Register</a></li>
-                  <li><a href="page-signin.html">Signin</a></li>
-                  <li><a href="page-reset-password.html">Reset Password</a></li>
-                  <li><a href="page-content-protected.html">Content Protected</a></li>
-                </ul>
-              </li>
-              <li class="has-children"><a href="blog-grid.html">Blog</a>
-                <ul class="sub-menu">
-                  <li><a href="blog-grid.html">Blog Grid</a></li>
-                  <li><a href="blog-grid-2.html">Blog Grid 2</a></li>
-                  <li><a href="blog-details.html">Blog Single</a></li>
+                  <li><a href="blog">Blog Grid</a></li>
+                  <li><a href="blog-details">Blog Single</a></li>
                 </ul>
               </li>
               <li class="dashboard"><a href="http://wp.alithemes.com/html/jobbox/demos/dashboard" target="_blank">Dashboard</a></li>
@@ -62,7 +50,7 @@
           <div class="burger-icon burger-icon-white"><span class="burger-icon-top"></span><span class="burger-icon-mid"></span><span class="burger-icon-bottom"></span></div>
         </div>
         <div class="header-right">
-          <div class="block-signin"><a class="text-link-bd-btom hover-up" href="page-register.html">Register</a><a class="btn btn-default btn-shadow ml-40 hover-up" href="page-signin.html">Sign in</a></div>
+          <div class="block-signin"><a class="text-link-bd-btom hover-up" href="register">Register</a><a class="btn btn-default btn-shadow ml-40 hover-up" href="signin">Sign in</a></div>
         </div>
       </div>
     </div>
@@ -80,52 +68,40 @@
             <!-- mobile menu start-->
             <nav>
               <ul class="mobile-menu font-heading">
-                <li class="has-children"><a class="active" href="index.html">Home</a>
+                <li><a class="active" href="/">Home</a></li>
+                <li class="has-children"><a href="jobs">Find a Job</a>
                   <ul class="sub-menu">
-                    <li><a href="index.html">Home 1</a></li>
-                    <li><a href="index-2.html">Home 2</a></li>
-                    <li><a href="index-3.html">Home 3</a></li>
-                    <li><a href="index-4.html">Home 4</a></li>
-                    <li><a href="index-5.html">Home 5</a></li>
-                    <li><a href="index-6.html">Home 6</a></li>
+                    <li><a href="jobs">Jobs Grid</a></li>
+                    <li><a href="job-details">Jobs Details 2 </a></li>
                   </ul>
                 </li>
-                <li class="has-children"><a href="jobs-grid.html">Find a Job</a>
+                <li class="has-children"><a href="companies">Recruiters</a>
                   <ul class="sub-menu">
-                    <li><a href="jobs-grid.html">Jobs Grid</a></li>
-                    <li><a href="jobs-list.html">Jobs List</a></li>
-                    <li><a href="job-details.html">Jobs Details </a></li>
-                    <li><a href="job-details-2.html">Jobs Details 2 </a></li>
+                    <li><a href="companies">Recruiters</a></li>
+                    <li><a href="company-details">Company Details</a></li>
                   </ul>
                 </li>
-                <li class="has-children"><a href="companies-grid.html">Recruiters</a>
+                <li class="has-children"><a href="candidates">Candidates</a>
                   <ul class="sub-menu">
-                    <li><a href="companies-grid.html">Recruiters</a></li>
-                    <li><a href="company-details.html">Company Details</a></li>
+                    <li><a href="candidates">Candidates Grid</a></li>
+                    <li><a href="candidate-details">Candidate Details</a></li>
                   </ul>
                 </li>
-                <li class="has-children"><a href="candidates-grid.html">Candidates</a>
+                <li class="has-children"><a href="about">Pages</a>
                   <ul class="sub-menu">
-                    <li><a href="candidates-grid.html">Candidates Grid</a></li>
-                    <li><a href="candidate-details.html">Candidate Details</a></li>
+                    <li><a href="about">About Us</a></li>
+                    <li><a href="pricing">Pricing Plan</a></li>
+                    <li><a href="contact">Contact Us</a></li>
+                    <li><a href="register">Register</a></li>
+                    <li><a href="signin">Signin</a></li>
+                    <li><a href="reset-password">Reset Password</a></li>
+                    <li><a href="content-protected">Content Protected</a></li>
                   </ul>
                 </li>
-                <li class="has-children"><a href="blog-grid.html">Pages</a>
+                <li class="has-children"><a href="blog">Blog</a>
                   <ul class="sub-menu">
-                    <li><a href="page-about.html">About Us</a></li>
-                    <li><a href="page-pricing.html">Pricing Plan</a></li>
-                    <li><a href="page-contact.html">Contact Us</a></li>
-                    <li><a href="page-register.html">Register</a></li>
-                    <li><a href="page-signin.html">Signin</a></li>
-                    <li><a href="page-reset-password.html">Reset Password</a></li>
-                    <li><a href="page-content-protected.html">Content Protected</a></li>
-                  </ul>
-                </li>
-                <li class="has-children"><a href="blog-grid.html">Blog</a>
-                  <ul class="sub-menu">
-                    <li><a href="blog-grid.html">Blog Grid</a></li>
-                    <li><a href="blog-grid-2.html">Blog Grid 2</a></li>
-                    <li><a href="blog-details.html">Blog Single</a></li>
+                    <li><a href="blog">Blog Grid</a></li>
+                    <li><a href="blog-details">Blog Single</a></li>
                   </ul>
                 </li>
                 <li><a href="http://wp.alithemes.com/html/jobbox/demos/dashboard" target="_blank">Dashboard</a></li>
@@ -139,7 +115,7 @@
               <li><a href="#">Work Preferences</a></li>
               <li><a href="#">Account Settings</a></li>
               <li><a href="#">Go Pro</a></li>
-              <li><a href="page-signin.html">Sign Out</a></li>
+              <li><a href="signin">Sign Out</a></li>
             </ul>
           </div>
           <div class="site-copyright">Copyright 2022 &copy; JobBox. <br>Designed by AliThemes.</div>
@@ -181,12 +157,12 @@
             <div class="login_footer form-group d-flex justify-content-between">
               <label class="cb-container">
                 <input type="checkbox"><span class="text-small">Agree our terms and policy</span><span class="checkmark"></span>
-              </label><a class="text-muted" href="page-contact.html">Lean more</a>
+              </label><a class="text-muted" href="contact">Lean more</a>
             </div>
             <div class="form-group">
               <button class="btn btn-default hover-up w-100" type="submit" name="login">Apply Job</button>
             </div>
-            <div class="text-muted text-center">Do you need support? <a href="page-contact.html">Contact Us</a></div>
+            <div class="text-muted text-center">Do you need support? <a href="contact">Contact Us</a></div>
           </form>
         </div>
       </div>
